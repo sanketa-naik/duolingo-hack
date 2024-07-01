@@ -116,9 +116,9 @@ try {
 		).then((response) => response.json());
 
 		xp += response.xpGain;
+		console.log(`🎉 Lesson ${i+1} completed with ${response.xpGain} XP.`);
 	}
-
-	console.log(`🎉 You won ${xp} XP`);
+	console.log(`🎉 You won total ${xp} XP after ${process.env.LESSONS} lessons.`);
 } catch (error) {
 	console.log("❌ Something went wrong");
 	if (error instanceof Error) {
