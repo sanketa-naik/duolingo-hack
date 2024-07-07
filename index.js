@@ -90,7 +90,7 @@ try {
 					juicy: true,
 					learningLanguage,
 					smartTipsVersion: 2,
-					type: "LISTENING_PRACTICE",
+					type: "GLOBAL_PRACTICE",
 				}),
 				headers,
 				method: "POST",
